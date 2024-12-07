@@ -274,7 +274,7 @@ out
 
 # Project specific
 build
-dist
-dist/**
+# dist
+# dist/**
 
 .npmrc
