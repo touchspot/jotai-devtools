@@ -267,6 +267,9 @@ var getReduxExtension = (enabled = process.env.NODE_ENV !== "production") => {
   if (!enabled) {
     return void 0;
   }
+  if (typeof window === "undefined") {
+    return void 0;
+  }
   const reduxExtension = window.__REDUX_DEVTOOLS_EXTENSION__;
   if (!reduxExtension && process.env.NODE_ENV !== "production") {
     console.warn("Please install/enable Redux devtools extension");
