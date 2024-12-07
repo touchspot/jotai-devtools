@@ -2,7 +2,7 @@ import React, { StrictMode, useState } from 'react';
 import { act, fireEvent, render, waitFor } from '@testing-library/react';
 import { Provider, useAtom, useAtomValue } from 'jotai/react';
 import { atom, createStore } from 'jotai/vanilla';
-import { useAtomsSnapshot } from 'jotai-devtools/utils';
+import { useAtomsSnapshot } from 'jotai-devtools';
 
 describe('useAtomsSnapshot', () => {
   it('[DEV-ONLY] should register newly added atoms', async () => {

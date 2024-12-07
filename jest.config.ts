@@ -20,8 +20,7 @@ const config: Config = {
           },
           baseUrl: '.',
           paths: {
-            'jotai-devtools': ['./src/index.ts'],
-            'jotai-devtools/utils': ['./src/utils'],
+            'jotai-devtools': ['./src'],
           },
         },
       },
@@ -36,21 +35,13 @@ const config: Config = {
   ],
   moduleNameMapper: {
     '^jotai-devtools$': '<rootDir>/src/index.ts',
-    '^jotai-devtools/(.*)$': '<rootDir>/src/$1.ts',
-    '\\.(css|less|sass|scss|woff2)$': '<rootDir>/__mocks__/styleMock.js',
   },
   modulePathIgnorePatterns: ['dist'],
   globals: {
     __DEV__: true,
   },
   coverageReporters: ['json', 'html', 'text', 'text-summary'],
-  collectCoverageFrom: [
-    'src/**/*.{js,ts,tsx}',
-    '!src/**/*.stories.{js,ts,tsx}',
-    '!src/stories/**',
-    // Copied as is from Jotai core and we're not changing it
-    '!src/DevTools/Extension/components/Shell/components/AtomViewer/hooks/use.ts',
-  ],
+  collectCoverageFrom: ['src/**/*.{js,ts,tsx}'],
   coverageDirectory: './coverage/',
   setupFilesAfterEnv: ['<rootDir>/__tests__/setup.ts'],
 };

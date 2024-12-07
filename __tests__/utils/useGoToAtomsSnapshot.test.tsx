@@ -1,15 +1,9 @@
-import React, {
-  JSXElementConstructor,
-  StrictMode,
-  Suspense,
-  useEffect,
-  useRef,
-} from 'react';
+import React, { StrictMode, Suspense, useEffect, useRef } from 'react';
 import { fireEvent, render, waitFor } from '@testing-library/react';
-import { Provider, useAtom } from 'jotai/react';
+import { useAtom } from 'jotai/react';
 import { atom } from 'jotai/vanilla';
 import type { Atom } from 'jotai/vanilla';
-import { useAtomsSnapshot, useGotoAtomsSnapshot } from 'jotai-devtools/utils';
+import { useAtomsSnapshot, useGotoAtomsSnapshot } from 'jotai-devtools';
 
 describe('useAtomsSnapshot', () => {
   it('[DEV-ONLY] useGotoAtomsSnapshot should modify atoms snapshot', async () => {

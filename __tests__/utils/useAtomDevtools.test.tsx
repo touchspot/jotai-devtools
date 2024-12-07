@@ -2,7 +2,7 @@ import React, { StrictMode, Suspense } from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
 import { useAtom } from 'jotai/react';
 import { atom } from 'jotai/vanilla';
-import { useAtomDevtools } from 'jotai-devtools/utils';
+import { useAtomDevtools } from 'jotai-devtools';
 
 let extensionSubscriber: ((message: any) => void) | undefined;
 

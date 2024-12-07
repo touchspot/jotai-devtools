@@ -3,7 +3,7 @@ import type { ReactElement } from 'react';
 import { act, fireEvent, render, waitFor } from '@testing-library/react';
 import { useAtom } from 'jotai/react';
 import { atom } from 'jotai/vanilla';
-import { useAtomsDevtools } from 'jotai-devtools/utils';
+import { useAtomsDevtools } from 'jotai-devtools';
 
 let extensionSubscriber: ((message: any) => void) | undefined;
 
