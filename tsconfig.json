@@ -10,7 +10,7 @@
     "types",
     "tsup.config.ts",
     "jest",
-    "@testing-library/jest-dom"
+    "@redux-devtools/extension"
   ],
   "exclude": ["node_modules", "dist"]
 }

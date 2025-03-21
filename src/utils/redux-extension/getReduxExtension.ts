@@ -30,6 +30,10 @@ export const getReduxExtension = (
     return undefined;
   }
 
+  if (typeof window === 'undefined') {
+    return undefined;
+  }
+
   const reduxExtension = window.__REDUX_DEVTOOLS_EXTENSION__;
   if (!reduxExtension && __DEV__) {
     console.warn('Please install/enable Redux devtools extension');

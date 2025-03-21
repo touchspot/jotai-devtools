@@ -1,6 +1,0 @@
-.internal-jotai-devtools-atom-viewer-wrapper {
-  background: light-dark(
-    var(--mantine-color-gray-2),
-    var(--mantine-color-dark-8)
-  );
-}

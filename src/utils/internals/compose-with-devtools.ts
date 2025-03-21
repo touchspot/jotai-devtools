@@ -136,9 +136,12 @@ const __composeDevTools = (
   (store as WithDevToolsStore<typeof store>).getMountedAtomState = (atom) => {
     const aState = store.dev4_get_internal_weak_map().get(atom);
 
+    // @ts-expect-error this is ok
     if (aState && aState.m) {
       return {
+        // @ts-expect-error this is ok
         l: aState.m.l,
+        // @ts-expect-error this is ok
         t: aState.m.t,
       };
     }

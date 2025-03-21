@@ -9,20 +9,11 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'plugin:storybook/recommended',
   ],
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'prettier',
-    'react-hooks',
-    'jest',
-    'import',
-  ],
+  plugins: ['@typescript-eslint', 'react', 'prettier', 'react-hooks', 'import'],
   env: {
     browser: true,
     node: true,
-    jest: true,
     es6: true,
   },
   parserOptions: {
@@ -56,13 +47,6 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    'jest/consistent-test-it': [
-      'error',
-      {
-        fn: 'it',
-        withinDescribe: 'it',
-      },
-    ],
     'import/order': [
       'error',
       {
@@ -130,12 +114,6 @@ module.exports = {
       files: ['src'],
       parserOptions: {
         project: './tsconfig.json',
-      },
-    },
-    {
-      files: ['tests/**/*.tsx'],
-      env: {
-        'jest/globals': true,
       },
     },
     {
