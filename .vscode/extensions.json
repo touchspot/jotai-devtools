@@ -1,8 +1,0 @@
-{
-  "recommendations": [
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
-    "vunguyentuan.vscode-postcss",
-    "vunguyentuan.vscode-css-variables"
-  ]
-}

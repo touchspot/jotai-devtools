@@ -1,8 +1,0 @@
-dist
-node_modules
-build
-.eslintrc.js
-coverage
-react-shim.js
-__mocks__/styleMock.js
-postcss.config.js

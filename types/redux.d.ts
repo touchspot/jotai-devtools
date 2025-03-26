@@ -1,1 +1,0 @@
-import '@redux-devtools/extension';
